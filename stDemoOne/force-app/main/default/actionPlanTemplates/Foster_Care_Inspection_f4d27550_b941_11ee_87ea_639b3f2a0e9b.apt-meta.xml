@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanType>Retail</actionPlanType>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Foster Care Inspection</name>
+    <targetEntityType>Visit</targetEntityType>
+    <uniqueName>Foster_Care_Inspection_f4d27550_b941_11ee_87ea_639b3f2a0e9b</uniqueName>
+</ActionPlanTemplate>

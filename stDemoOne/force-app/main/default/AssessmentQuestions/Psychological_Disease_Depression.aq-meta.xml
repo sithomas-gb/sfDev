@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Psychological Disease Depression</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Depression</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Psychological_Disease_Depression</developerName>
+    <formulaResponseDataType>Text</formulaResponseDataType>
+    <name>Psychological Disease Depression</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>Psychological_disease_Group</relatedQuestion>
+</AssessmentQuestion>

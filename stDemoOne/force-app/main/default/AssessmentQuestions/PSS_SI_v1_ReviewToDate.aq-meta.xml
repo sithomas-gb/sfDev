@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>ReviewToDate</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>To Date</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Formula</dataType>
+    <developerName>PSS_SI_v1_ReviewToDate</developerName>
+    <formulaResponseDataType>Text</formulaResponseDataType>
+    <name>ReviewToDate</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

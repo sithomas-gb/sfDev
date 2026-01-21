@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Days of work or school missed</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Approximately how many days of school or work have you missed within the last 90 days?</questionText>
+        <responseValues>1-10 days
+11-20 days
+21-30 days
+More than 30 days</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Days_of_work_or_school_missed</developerName>
+    <name>Days of work or school missed</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

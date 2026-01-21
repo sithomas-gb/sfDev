@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>AdditionalComments4</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Additional Comments</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextArea</dataType>
+    <developerName>PSS_SI_v1_AdditionalComments4</developerName>
+    <formulaResponseDataType>Text</formulaResponseDataType>
+    <name>AdditionalComments4</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

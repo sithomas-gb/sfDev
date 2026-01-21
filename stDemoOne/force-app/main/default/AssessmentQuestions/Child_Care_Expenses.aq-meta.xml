@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Child Care Expenses</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What are the client&apos;s monthly Child Care Expenses?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Currency</dataType>
+    <developerName>Child_Care_Expenses</developerName>
+    <name>Child Care Expenses</name>
+    <questionCategory>Referral</questionCategory>
+</AssessmentQuestion>

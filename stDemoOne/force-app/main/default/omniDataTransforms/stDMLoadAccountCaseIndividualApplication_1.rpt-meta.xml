@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;DRCreateBenefitIACase&quot; : null,
+    &quot;SupportingDocumentationStep&quot; : null,
+    &quot;CategorySelectionStep&quot; : null,
+    &quot;DRGetContactDetailsforUser&quot; : null,
+    &quot;InformationStep&quot; : null,
+    &quot;AttestationStep&quot; : null,
+    &quot;BeneficiaryStep&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;SupportingDocumentationStep&quot; : {
+    &quot;File1&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;size&quot; : null,
+      &quot;filename&quot; : null
+    } ]
+  },
+  &quot;CategorySelectionStep&quot; : {
+    &quot;SupportReceivedPreviously&quot; : null,
+    &quot;Category&quot; : null,
+    &quot;SubCategory&quot; : null
+  },
+  &quot;InformationStep&quot; : { },
+  &quot;AttestationStep&quot; : {
+    &quot;CustomLWC1&quot; : null,
+    &quot;Disclosure1&quot; : null
+  },
+  &quot;BeneficiaryStep&quot; : {
+    &quot;TaxID&quot; : null,
+    &quot;Email&quot; : null,
+    &quot;LastName&quot; : null,
+    &quot;AddressLookup-Block&quot; : {
+      &quot;AddressLookup&quot; : null,
+      &quot;Country&quot; : null,
+      &quot;PostalCode&quot; : null,
+      &quot;State&quot; : null,
+      &quot;City&quot; : null,
+      &quot;Street&quot; : null
+    },
+    &quot;FirstName&quot; : null,
+    &quot;BeneficiarySubmission&quot; : null,
+    &quot;FamilyMemberBlock&quot; : {
+      &quot;SupportPhone&quot; : null,
+      &quot;SupportEmail&quot; : null,
+      &quot;SupportLastName&quot; : null,
+      &quot;SupportFirstName&quot; : null
+    },
+    &quot;Telephone&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>stDMLoadAccountCaseIndividualApplication</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9ad03664-0cd6-40b4-8e8b-904368d83206</globalKey>
+        <inputFieldName>BeneficiaryStep:FamilyMemberBlock:SupportEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>PersonEmail</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| NOW</formulaConverted>
+        <formulaExpression>NOW()</formulaExpression>
+        <formulaResultPath>AppliedDate</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>1931734b-7e18-4bb0-9576-01c8a20ba738</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6e8bc352-a376-40ed-be35-c33bce0088e7</globalKey>
+        <inputFieldName>BeneficiaryStep:Telephone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Phone</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>98481210-b70c-442b-8f7f-f670f343e4b9</globalKey>
+        <inputFieldName>BeneficiaryStep:AddressLookup-Block:State</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>State__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Services &amp; Benefits</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1de6bee5-3f1d-4d62-bb7d-f39d4329afd8</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>New</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5fd6b118-14b9-4ba0-b50d-11c6255bae9e</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>13e0cac7-5d50-4373-b70f-2c7f491d7194</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ee23123f-284e-4a27-84b9-3e91e85a8d84</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>DeveloperName</lookupByFieldName>
+        <lookupObjectName>RecordType</lookupObjectName>
+        <lookupReturnedFieldName>Case</lookupReturnedFieldName>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>a7e7c951-d8ed-4b05-a194-8dc832f5e1f9</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>39522f3f-d9e4-4418-b293-66d658a1ccc7</globalKey>
+        <inputFieldName>BeneficiaryStep:AddressLookup-Block:PostalCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Zip__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:BeneficiaryStep:FirstName &quot;/\/\/&quot; var:BeneficiaryStep:LastName CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(BeneficiaryStep:FirstName, &quot; &quot;, BeneficiaryStep:LastName)</formulaExpression>
+        <formulaResultPath>ContactName</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>d16287ca-b328-4f5a-9154-0ee4013b4767</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Medium</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c282ac37-3784-400c-9950-5d66e2393731</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Priority</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>a1f4ca2b-2ba7-4c25-9328-30e7610769f9</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedFieldName>Id</linkedFieldName>
+        <linkedObjectSequence>3.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>ApplicationCaseId</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>35c3dbc8-a7d0-48cd-89da-a07083c5ccb4</globalKey>
+        <inputFieldName>BeneficiaryStep:AddressLookup-Block:City</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>City__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>e8dd5606-5504-41b7-a329-d353bd8c2be8</globalKey>
+        <inputFieldName>BeneficiaryStep:FamilyMemberBlock:SupportPhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Phone</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d2e5526f-755d-4625-901b-e7fbb994bca4</globalKey>
+        <inputFieldName>Subject</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Subject</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>eb7165ec-1645-4e73-b6ad-a283b4046c5f</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedFieldName>Id</linkedFieldName>
+        <linkedObjectSequence>1.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>AccountId</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>de83a1f9-797f-4f9b-a006-f3a11fdeb1ed</globalKey>
+        <inputFieldName>AppliedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>AppliedDate</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>96d80840-3d5f-4fdd-8727-9d2b5d329052</globalKey>
+        <inputFieldName>ContactName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>Name</lookupByFieldName>
+        <lookupObjectName>Contact</lookupObjectName>
+        <lookupReturnedFieldName>Id</lookupReturnedFieldName>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>ContactId</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2e3b30f7-5721-49f3-827a-45535171be42</globalKey>
+        <inputFieldName>BeneficiaryStep:AddressLookup-Block:Street</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Street__c</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a54387f7-6498-4045-bf03-1050568abbae</globalKey>
+        <inputFieldName>CategorySelectionStep:SubCategory</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>Service_Sub_Category__c</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>00ac4f35-7b21-4389-9491-e14d0e5e69ec</globalKey>
+        <inputFieldName>AppliedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>ApprovedDate</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>0c74cd58-a102-4e10-8bc2-0f043464936b</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>c19a2bf0-65c7-40ce-bdf4-b35270830196</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedFieldName>Id</linkedFieldName>
+        <linkedObjectSequence>1.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>AccountId</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:BeneficiaryStep:FamilyMemberBlock:SupportFirstName &quot;/\/\/&quot; var:BeneficiaryStep:FamilyMemberBlock:SupportLastName CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(BeneficiaryStep:FamilyMemberBlock:SupportFirstName, &quot; &quot;, BeneficiaryStep:FamilyMemberBlock:SupportLastName)</formulaExpression>
+        <formulaResultPath>FamilyMemberName</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>f5e98cd9-feec-4468-a8c1-5b8d60186d8c</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>99246a20-9d8d-4f28-af7b-0e7076c20386</globalKey>
+        <inputFieldName>BeneficiaryStep:AddressLookup-Block:AddressLookup</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingAddress</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>04923a73-1a82-4764-8317-cd3bfe7732ff</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>DeveloperName</lookupByFieldName>
+        <lookupObjectName>RecordType</lookupObjectName>
+        <lookupReturnedFieldName>Aging_Disability_Services</lookupReturnedFieldName>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>cebd83b9-0718-4396-b726-b5b891a15a7b</globalKey>
+        <inputFieldName>CategorySelectionStep:Category</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>Category</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Web</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a3aee95f-ebe8-42de-b4c0-ebed49fcc183</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Origin</outputFieldName>
+        <outputObjectName>Case</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Submitted</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>a44d62f1-9ddd-4f51-b4fc-efba0b4db7cf</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>46bfca6f-fc07-438c-a58e-75d080192129</globalKey>
+        <inputFieldName>BeneficiaryStep:Email</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonEmail</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Home/\/\/Health/\/\/Services/\/\/-/\/\/&quot; var:BeneficiaryStep:FirstName &quot;/\/\/&quot; var:BeneficiaryStep:LastName CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(&quot;Home Health Services - &quot;, BeneficiaryStep:FirstName, &quot; &quot;, BeneficiaryStep:LastName)</formulaExpression>
+        <formulaResultPath>Subject</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>5d55cb42-f48b-4bab-8f04-9ff5334acc75</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Home Health Agency (HHA) License</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c70ae5f0-8417-4831-92e7-b6564556ac81</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>Name</lookupByFieldName>
+        <lookupObjectName>RegulatoryAuthorizationType</lookupObjectName>
+        <lookupReturnedFieldName>Id</lookupReturnedFieldName>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>LicenseTypeId</outputFieldName>
+        <outputObjectName>IndividualApplication</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>6ead58d9-7955-4c69-9bf8-474e95cab83d</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>stDMLoadAccountCaseIndividualApplication</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;LastName&quot; : &quot;Simmons&quot;,
+  &quot;ContactId&quot; : &quot;0034S000005gvl0QAA&quot;,
+  &quot;FirstName&quot; : &quot;Jennifer&quot;,
+  &quot;Telephone&quot; : &quot;9052222222&quot;,
+  &quot;Email&quot; : &quot;jsimmonsgrants062021@gmail.com&quot;,
+  &quot;omniscriptId&quot; : &quot;0jN4S00000000trUAA&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;type&quot; : &quot;Benefits&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jN4S00000000trUAA&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;subType&quot; : &quot;Application&quot;,
+  &quot;timeStamp&quot; : &quot;2023-01-17T18:17:22.688Z&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/New_York&quot;,
+  &quot;userTimeZone&quot; : &quot;-300&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;jeremy.blankenship@gps.ido&quot;,
+  &quot;userId&quot; : &quot;0054S0000015CoyQAE&quot;,
+  &quot;omniProcessId&quot; : &quot;0jN4S00000000trUAA&quot;,
+  &quot;CategorySelectionStep&quot; : {
+    &quot;SubCategory&quot; : &quot;Full-time home health aid&quot;,
+    &quot;SupportReceivedPreviously&quot; : &quot;No&quot;,
+    &quot;Category&quot; : &quot;Home Health Services&quot;
+  },
+  &quot;BeneficiaryStep&quot; : {
+    &quot;BeneficiarySubmission&quot; : true,
+    &quot;FamilyMemberBlock&quot; : {
+      &quot;SupportPhone&quot; : &quot;067920425&quot;,
+      &quot;SupportEmail&quot; : &quot;paiut@mailinator.com&quot;,
+      &quot;SupportLastName&quot; : &quot;Aiuti&quot;,
+      &quot;SupportFirstName&quot; : &quot;Patrizia&quot;
+    },
+    &quot;TaxID&quot; : &quot;MA641934001002IT&quot;,
+    &quot;AddressLookup-Block&quot; : {
+      &quot;Street&quot; : &quot;6 Via Colle Carciano&quot;,
+      &quot;City&quot; : &quot;Velletri&quot;,
+      &quot;State&quot; : &quot;Lazio&quot;,
+      &quot;Country&quot; : &quot;Italy&quot;,
+      &quot;PostalCode&quot; : &quot;00049&quot;,
+      &quot;AddressLookup&quot; : &quot;Via Colle Carciano, 6, 00049 Velletri RM, Italy&quot;
+    },
+    &quot;Email&quot; : &quot;mauiti@mailinator.com&quot;,
+    &quot;Telephone&quot; : &quot;390629349&quot;,
+    &quot;LastName&quot; : &quot;Aiuti&quot;,
+    &quot;FirstName&quot; : &quot;Massimo&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>stDMLoadAccountCaseIndividualApplication_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

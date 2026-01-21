@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Public_Opportunity__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Check this box if the Funding Opportunity is available to the public. If unchecked, the opportunity will only be visible to those users you choose to share it with.</inlineHelpText>
+    <label>Public Opportunity</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

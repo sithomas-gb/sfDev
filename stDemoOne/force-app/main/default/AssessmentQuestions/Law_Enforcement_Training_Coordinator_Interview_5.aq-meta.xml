@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Law Enforcement Training Coordinator Interview 5</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Why are you interested in the Law Enforcement Training Coordinator position at the DPS?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>Law_Enforcement_Training_Coordinator_Interview_5</developerName>
+    <name>Law Enforcement Training Coordinator Interview 5</name>
+    <questionCategory>Interview</questionCategory>
+</AssessmentQuestion>

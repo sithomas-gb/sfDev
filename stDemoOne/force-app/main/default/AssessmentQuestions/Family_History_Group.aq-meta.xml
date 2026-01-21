@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Family History Group</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Family History of Substance Abuse</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Family_History_Group</developerName>
+    <formulaResponseDataType>Text</formulaResponseDataType>
+    <name>Family History Group</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

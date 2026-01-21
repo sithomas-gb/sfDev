@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Senior Software Engineer Interview 1</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Please describe your experience with network troubleshooting and the tools you commonly use.</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>Senior_Software_Engineer_Interview_1</developerName>
+    <name>Senior Software Engineer Interview 1</name>
+    <questionCategory>Interview</questionCategory>
+</AssessmentQuestion>

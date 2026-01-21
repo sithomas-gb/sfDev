@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Project Budget</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>ApplicationStageDefinitionId</name>
+            <valueLiteral>13bHu0000000H0MIAU</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>2</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>IndividualApplicationTask</itemEntityType>
+        <name>Project Budget</name>
+        <uniqueName>Project_Budget_9328d140_3ef5_11ef_9a64_012e893c8278</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Project Overview</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>ApplicationStageDefinitionId</name>
+            <valueLiteral>13bHu0000000H0OIAU</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>1</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>IndividualApplicationTask</itemEntityType>
+        <name>Project Overview</name>
+        <uniqueName>Project_Overview_8b6953c5_3ef5_11ef_9a64_5b218b09a577</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Project Location</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>ApplicationStageDefinitionId</name>
+            <valueLiteral>13bHu0000000H0NIAU</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>3</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>IndividualApplicationTask</itemEntityType>
+        <name>Project Location</name>
+        <uniqueName>Project_Location_98fc3629_3ef5_11ef_9a64_dd4c89488c23</uniqueName>
+    </actionPlanTemplateItem>
+    <description>CDBG - Application Framework Example</description>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>CDBG - Grant Application Application Framework</name>
+    <targetEntityType>IndividualApplication</targetEntityType>
+    <uniqueName>CDBG_Grant_Application_Application_Framew_fee0b280_3eeb_11ef_9a64_d5706c1f6087</uniqueName>
+</ActionPlanTemplate>

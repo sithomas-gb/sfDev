@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Elderly Home Health Aide</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>DefinitionReferenceId</name>
+            <valueLiteral>0osHu000000H2sYIAS</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>1</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>OmniAssessmentTask</itemEntityType>
+        <name>Elderly Home Health Aide</name>
+        <uniqueName>Elderly_Home_Health_Aide_d3a9861b_a034_11ee_94ac_4b8fc53a3d01</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanType>Retail</actionPlanType>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>In-Home Care Assessment</name>
+    <targetEntityType>Visit</targetEntityType>
+    <uniqueName>In_Home_Care_Assessment_bc24dcd3_a034_11ee_94ac_fdd64a134c55</uniqueName>
+</ActionPlanTemplate>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>PropertyOwner1</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Is the property owner at the location of the residence?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>PropertyOwner1</developerName>
+    <name>PropertyOwner1</name>
+    <questionCategory>Investigation</questionCategory>
+</AssessmentQuestion>

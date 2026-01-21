@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>AcknowledgementText</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>I certify that the information that I’ve provided is true, correct, and complete to the best of my knowledge. I understand that knowingly giving false or misleading information about a claim is punishable by law and may result in my prosecution. I understand that by typing my name, I am signing this application.</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>PSS_SI_v1_AcknowledgementText1</developerName>
+    <name>AcknowledgementText</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

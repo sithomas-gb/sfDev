@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>TakingTimeOff</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>I stopped work due to the injury</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>PSS_SI_v1_TakingTimeOff</developerName>
+    <name>TakingTimeOff</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

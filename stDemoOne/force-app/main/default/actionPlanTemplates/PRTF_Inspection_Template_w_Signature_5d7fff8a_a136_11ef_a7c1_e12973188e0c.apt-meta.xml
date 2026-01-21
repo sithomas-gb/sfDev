@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>28-4-1214  Emergency Plans: Drills</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>AssessmentTaskDefinitionId</name>
+            <valueLiteral>0Z4Hu000000TrLyKAK</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>1</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>AssessmentTask</itemEntityType>
+        <name>28-4-1214  Emergency Plans: Drills</name>
+        <uniqueName>X28_4_1214_Emergency_Plans_Drills_5d9e5d02_a136_11ef_a7c1_c9e182c60fbd</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>SignatureTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Owner Signature</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>SignatureTask</itemEntityType>
+        <name>Owner Signature</name>
+        <uniqueName>Owner_Signature_5e56feb3_a136_11ef_a7c1_e534eaf217b4</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>28-4-1216  Food Services</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>AssessmentTaskDefinitionId</name>
+            <valueLiteral>0Z4Hu000000TrLzKAK</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>3</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>AssessmentTask</itemEntityType>
+        <name>28-4-1216  Food Services</name>
+        <uniqueName>X28_4_1216_Food_Services_5d95d17e_a136_11ef_a7c1_e30e39d35253</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>28-4-1215  Environmental Standards</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>AssessmentTaskDefinitionId</name>
+            <valueLiteral>0Z4Hu000000TrLxKAK</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>2</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>AssessmentTask</itemEntityType>
+        <name>28-4-1215  Environmental Standards</name>
+        <uniqueName>X28_4_1215_Environmental_Standards_5d9a1740_a136_11ef_a7c1_cbe70b358a31</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>28-4-1218  Transportation</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>AssessmentTaskDefinitionId</name>
+            <valueLiteral>0Z4Hu000000TrM0KAK</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>4</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>AssessmentTask</itemEntityType>
+        <name>28-4-1218  Transportation</name>
+        <uniqueName>X28_4_1218_Transportation_5d90c86c_a136_11ef_a7c1_835433d2b290</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>SignatureTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Inspector Signature</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>true</isRequired>
+        <itemEntityType>SignatureTask</itemEntityType>
+        <name>Inspector Signature</name>
+        <uniqueName>Inspector_Signature_5e5ccb15_a136_11ef_a7c1_45de09f2a9a3</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanType>Retail</actionPlanType>
+    <description>*PRTF Inspection with Signature</description>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>*PRTF Inspection Template w/Signature</name>
+    <targetEntityType>Visit</targetEntityType>
+    <uniqueName>PRTF_Inspection_Template_w_Signature_5d7fff8a_a136_11ef_a7c1_e12973188e0c</uniqueName>
+</ActionPlanTemplate>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>ActionsTaken</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Did you or anyone else take immediate actions after the incident (e.g., calling for help, first aid, reporting it)?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextArea</dataType>
+    <developerName>ActionsTaken</developerName>
+    <name>ActionsTaken</name>
+    <questionCategory>Investigation</questionCategory>
+</AssessmentQuestion>

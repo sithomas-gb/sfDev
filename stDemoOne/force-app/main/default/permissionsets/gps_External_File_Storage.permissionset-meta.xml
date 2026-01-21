@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows you to upload and access files to and from S3</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>GPS External File Storage</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ContentHubUploadAWSS3User</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ContentHubUser</name>
+    </userPermissions>
+</PermissionSet>

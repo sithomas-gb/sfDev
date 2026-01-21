@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanType>Retail</actionPlanType>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Elderly In-Home Aide</name>
+    <targetEntityType>Visit</targetEntityType>
+    <uniqueName>Elderly_In_Home_Aide_f4e1b795_b941_11ee_87ea_dbff8d85d3e6</uniqueName>
+</ActionPlanTemplate>

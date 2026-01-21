@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>1-FacilityCondition</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Rate the Overall Condition of the Facility</questionText>
+        <responseValues>Excellent
+Good
+Fair
+Poor</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>X1_FacilityCondition</developerName>
+    <name>1-FacilityCondition</name>
+    <questionCategory>Inspection</questionCategory>
+</AssessmentQuestion>

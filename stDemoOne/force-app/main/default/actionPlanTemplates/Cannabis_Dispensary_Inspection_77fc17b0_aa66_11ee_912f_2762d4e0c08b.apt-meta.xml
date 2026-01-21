@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Operations</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>AssessmentTaskDefinitionId</name>
+            <valueLiteral>0Z4Hu000000TrLeKAK</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>AssessmentTask</itemEntityType>
+        <name>Operations</name>
+        <uniqueName>Operations_8a4b70c1_aa66_11ee_912f_cf36e093b4a9</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanType>Retail</actionPlanType>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Cannabis Dispensary Inspection</name>
+    <targetEntityType>Visit</targetEntityType>
+    <uniqueName>Cannabis_Dispensary_Inspection_77fc17b0_aa66_11ee_912f_2762d4e0c08b</uniqueName>
+</ActionPlanTemplate>

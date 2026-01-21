@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Example action plan to address new cases or service requests</description>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Basic Case Action Plan</name>
+    <targetEntityType>Case</targetEntityType>
+    <uniqueName>Basic_Case_Action_Plan_f4dab2b3_b941_11ee_87ea_8b65a05cf4b7</uniqueName>
+</ActionPlanTemplate>

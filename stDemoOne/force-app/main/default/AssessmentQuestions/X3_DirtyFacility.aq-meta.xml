@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>3-DirtyFacility</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Please describe the condition and upload any related photos.</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextArea</dataType>
+    <developerName>X3_DirtyFacility</developerName>
+    <name>3-DirtyFacility</name>
+    <questionCategory>Inspection</questionCategory>
+</AssessmentQuestion>

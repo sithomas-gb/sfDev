@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>AssessmentTaskDefinitionId</name>
+            <valueLiteral>0Z4Hu000000TrM1KAK</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Liquor Establishment</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>2</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>AssessmentTask</itemEntityType>
+        <name>Liquor Establishment</name>
+        <uniqueName>Establishment_9aa7d20d_a136_11ef_a7c1_89629d2cc056</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>SignatureTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Inspector</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>SignatureTask</itemEntityType>
+            <name>Description</name>
+            <valueLiteral>Inspector</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>4</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>SignatureTask</itemEntityType>
+        <name>Inspector</name>
+        <uniqueName>Inspector_d5053a44_a136_11ef_a7c1_35bde68c6856</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>AssessmentTaskDefinitionId</name>
+            <valueLiteral>0Z4Hu000000TrLpKAK</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Prohibited Products and Practices</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>3</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>AssessmentTask</itemEntityType>
+        <name>Prohibited Products and Practices</name>
+        <uniqueName>Prohibited_Products_and_Practices_9aa783eb_a136_11ef_a7c1_4b54b9f526f7</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Posting and Public Information</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>AssessmentTaskDefinitionId</name>
+            <valueLiteral>0Z4Hu000000TrLrKAK</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>1</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>AssessmentTask</itemEntityType>
+        <name>Posting and Public Information</name>
+        <uniqueName>Posting_and_Public_Information_9aa735c9_a136_11ef_a7c1_d3f1632eb59c</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanType>Retail</actionPlanType>
+    <description>Liquor Control Inspection</description>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Liquor Control Inspection</name>
+    <targetEntityType>Visit</targetEntityType>
+    <uniqueName>Liquor_Control_Inspection_9a97f385_a136_11ef_a7c1_815c2313d343</uniqueName>
+</ActionPlanTemplate>

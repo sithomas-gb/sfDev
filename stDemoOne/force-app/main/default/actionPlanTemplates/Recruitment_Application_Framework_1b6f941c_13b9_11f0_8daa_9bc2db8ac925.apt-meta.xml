@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IntakeFormSection</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Applicant Personal Details</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IntakeFormSection</itemEntityType>
+            <name>ApplicationStageDefinitionId</name>
+            <valueLiteral>13bHu0000000H0ZIAU</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>1</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>IntakeFormSection</itemEntityType>
+        <name>Applicant Personal Details</name>
+        <uniqueName>Applicant_Personal_Details_e40bd1dd_13ba_11f0_8daa_516108a6d1a3</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IntakeFormSection</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Applicant Education Details</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IntakeFormSection</itemEntityType>
+            <name>ApplicationStageDefinitionId</name>
+            <valueLiteral>13bHu0000000H0YIAU</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>3</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>IntakeFormSection</itemEntityType>
+        <name>Applicant Education Details</name>
+        <uniqueName>Applicant_Education_Details_4b975991_13ba_11f0_8daa_d34251b34f0f</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IntakeFormSection</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Applicant Work Experience</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IntakeFormSection</itemEntityType>
+            <name>ApplicationStageDefinitionId</name>
+            <valueLiteral>13bHu0000000H0aIAE</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>2</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>IntakeFormSection</itemEntityType>
+        <name>Applicant Work Experience</name>
+        <uniqueName>Applicant_Work_Experience_09288da7_13bb_11f0_8daa_b123f2297f81</uniqueName>
+    </actionPlanTemplateItem>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Recruitment Application Framework</name>
+    <targetEntityType>ApplicationForm</targetEntityType>
+    <uniqueName>Recruitment_Application_Framework_1b6f941c_13b9_11f0_8daa_9bc2db8ac925</uniqueName>
+</ActionPlanTemplate>

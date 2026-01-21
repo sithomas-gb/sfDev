@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Personal History Rx drugs</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Rx drugs</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Personal_History_Rx_drugs</developerName>
+    <formulaResponseDataType>Text</formulaResponseDataType>
+    <name>Personal History Rx drugs</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>Personal_History_Group</relatedQuestion>
+</AssessmentQuestion>

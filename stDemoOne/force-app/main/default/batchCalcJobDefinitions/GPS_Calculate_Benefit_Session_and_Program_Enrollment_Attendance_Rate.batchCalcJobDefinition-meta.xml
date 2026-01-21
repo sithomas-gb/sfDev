@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BatchCalcJobDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <description>Calculates the attendee count and absentee count for each benefit session across all related benefit disbursements.</description>
+        <fields>
+            <aggregateFunction>Sum</aggregateFunction>
+            <alias>BnfSession_SumAbsenteesCount</alias>
+            <sourceFieldName>BnfDisb_AbsenteesCount</sourceFieldName>
+        </fields>
+        <fields>
+            <aggregateFunction>Sum</aggregateFunction>
+            <alias>BnfSession_SumAttendeesCount</alias>
+            <sourceFieldName>BnfDisb_AttendeesCount</sourceFieldName>
+        </fields>
+        <groupBy>CompletedBenefitSession_Id</groupBy>
+        <label>Calculate Attendance for All Benefit Sessions</label>
+        <name>Calculate_Attendance_for_All_Benefit_Sessions</name>
+        <sourceName>Set_Attendance_for_All_Benefit_Sessions</sourceName>
+    </aggregates>
+    <aggregates>
+        <description>Calculates the attendee count and absentee count for each program enrollment across all related benefit disbursements.</description>
+        <fields>
+            <aggregateFunction>Sum</aggregateFunction>
+            <alias>SumSessionsAbsentCount</alias>
+            <sourceFieldName>SessionsAbsentCount</sourceFieldName>
+        </fields>
+        <fields>
+            <aggregateFunction>Sum</aggregateFunction>
+            <alias>SumSessionsAttendedCount</alias>
+            <sourceFieldName>SessionsAttendedCount</sourceFieldName>
+        </fields>
+        <groupBy>ProgramEnrollment_Id</groupBy>
+        <label>Calculate Attendance for All Program Enrollments</label>
+        <name>Calculate_Attendance_for_All_Program_Enrollments</name>
+        <sourceName>Set_Attendance_for_Program_Enrollments_With_Benefit_Disbursements</sourceName>
+    </aggregates>
+    <dataSpaceApiName>default</dataSpaceApiName>
+    <datasources>
+        <description>Gets all the benefit disbursements.</description>
+        <fields>
+            <alias>BenefitDisbursement_BenefitSessionId</alias>
+            <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
+            <name>BenefitSessionId</name>
+        </fields>
+        <fields>
+            <alias>BenefitDisbursement_DisbursementStatus</alias>
+            <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
+            <name>DisbursementStatus</name>
+        </fields>
+        <fields>
+            <alias>BenefitDisbursement_ProgramEnrollmentId</alias>
+            <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
+            <name>ProgramEnrollmentId</name>
+        </fields>
+        <fields>
+            <alias>BenefitDisbursement_BenefitSessionStatus</alias>
+            <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
+            <name>BenefitSession.Status</name>
+        </fields>
+        <label>Get Benefit Disbursements</label>
+        <name>Get_Benefit_Disbursements</name>
+        <sourceName>BenefitDisbursement</sourceName>
+        <type>StandardObject</type>
+    </datasources>
+    <datasources>
+        <description>Gets all the benefit sessions.</description>
+        <fields>
+            <alias>BenefitSession_Status</alias>
+            <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
+            <name>Status</name>
+        </fields>
+        <fields>
+            <alias>BenefitSession_Id</alias>
+            <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
+            <name>Id</name>
+        </fields>
+        <label>Get Benefit Sessions</label>
+        <name>Get_Benefit_Sessions</name>
+        <sourceName>BenefitSession</sourceName>
+        <type>StandardObject</type>
+    </datasources>
+    <datasources>
+        <description>Gets all the program enrollments.</description>
+        <fields>
+            <alias>ProgramEnrollment_Id</alias>
+            <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
+            <name>Id</name>
+        </fields>
+        <fields>
+            <alias>ProgramEnrollment_Name</alias>
+            <dataType>Text</dataType>
+            <isPrimaryKey>false</isPrimaryKey>
+            <name>Name</name>
+        </fields>
+        <label>Get Program Enrollments</label>
+        <name>Get_Program_Enrollments</name>
+        <sourceName>ProgramEnrollment</sourceName>
+        <type>StandardObject</type>
+    </datasources>
+    <definitionRunMode>Batch</definitionRunMode>
+    <description>Calculates the attendees count, absentees count, and attendance rate for benefit sessions and program enrollments by benefit disbursement status for a user.</description>
+    <doesGenAllFailedRecords>false</doesGenAllFailedRecords>
+    <executionPlatformObjectType>None</executionPlatformObjectType>
+    <executionPlatformType>CRMA</executionPlatformType>
+    <filters>
+        <criteria>
+            <operator>IsNotNull</operator>
+            <sequence>1</sequence>
+            <sourceFieldName>BenefitDisbursement_BenefitSessionId</sourceFieldName>
+        </criteria>
+        <criteria>
+            <operator>Equals</operator>
+            <sequence>2</sequence>
+            <sourceFieldName>BenefitDisbursement_BenefitSessionStatus</sourceFieldName>
+            <value>Completed</value>
+        </criteria>
+        <description>Filters benefit disbursements from the collection that have a benefit session ID.</description>
+        <filterCondition>1 AND 2</filterCondition>
+        <isDynamicFilter>false</isDynamicFilter>
+        <label>Filter Benefit Disbursements with Benefit Session</label>
+        <name>Filter_Benefit_Disbursements_with_Benefit_Session</name>
+        <sourceName>Get_Benefit_Disbursements</sourceName>
+    </filters>
+    <filters>
+        <criteria>
+            <operator>Equals</operator>
+            <sequence>1</sequence>
+            <sourceFieldName>BenefitSession_Status</sourceFieldName>
+            <value>Completed</value>
+        </criteria>
+        <description>Filters benefit sessions from the collection with a status of completed.</description>
+        <filterCondition>1</filterCondition>
+        <isDynamicFilter>false</isDynamicFilter>
+        <label>Filter Completed Benefit Sessions</label>
+        <name>Filter_Completed_Benefit_Sessions</name>
+        <sourceName>Get_Benefit_Sessions</sourceName>
+    </filters>
+    <filters>
+        <criteria>
+            <operator>NotEquals</operator>
+            <sequence>1</sequence>
+            <sourceFieldName>BenefitSession_Status</sourceFieldName>
+            <value>Completed</value>
+        </criteria>
+        <description>Filters benefit sessions from the collection with a status other than completed.</description>
+        <filterCondition>1</filterCondition>
+        <isDynamicFilter>false</isDynamicFilter>
+        <label>Filter Incomplete Benefit Sessions</label>
+        <name>Filter_Incomplete_Benefit_Sessions</name>
+        <sourceName>Get_Benefit_Sessions</sourceName>
+    </filters>
+    <filters>
+        <criteria>
+            <operator>IsNull</operator>
+            <sequence>1</sequence>
+            <sourceFieldName>BenefitDisbursement_BenefitSessionId</sourceFieldName>
+        </criteria>
+        <description>Filters program enrollments from the collection that aren’t related to a benefit disbursement.</description>
+        <filterCondition>1</filterCondition>
+        <isDynamicFilter>false</isDynamicFilter>
+        <label>Filter Program Enrollments Without Benefit Disbursements</label>
+        <name>Filter_Program_Enrollments_Without_Benefit_Disbursements</name>
+        <sourceName>Join_Program_Enrollments_with_Benefit_Disbursements</sourceName>
+    </filters>
+    <filters>
+        <criteria>
+            <operator>IsNotNull</operator>
+            <sequence>1</sequence>
+            <sourceFieldName>BenefitDisbursement_BenefitSessionId</sourceFieldName>
+        </criteria>
+        <description>Filters program enrollments with benefit sessions that have a status of completed.</description>
+        <filterCondition>1</filterCondition>
+        <isDynamicFilter>false</isDynamicFilter>
+        <label>Filter Program Enrollments with Completed Benefit Sessions</label>
+        <name>Filter_Program_Enrollments_with_Completed_Benefit_Sessions</name>
+        <sourceName>Join_Program_Enrollments_with_Benefit_Disbursements</sourceName>
+    </filters>
+    <isTemplate>false</isTemplate>
+    <joins>
+        <description>Associates benefit sessions with a status of completed to benefit disbursements.</description>
+        <fields>
+            <alias>BenefitDisbursement_BenefitSessionId</alias>
+            <sourceFieldName>BenefitDisbursement_BenefitSessionId</sourceFieldName>
+            <sourceName>Filter_Benefit_Disbursements_with_Benefit_Session</sourceName>
+        </fields>
+        <fields>
+            <alias>BenefitDisbursement_BenefitSessionStatus</alias>
+            <sourceFieldName>BenefitDisbursement_BenefitSessionStatus</sourceFieldName>
+            <sourceName>Filter_Benefit_Disbursements_with_Benefit_Session</sourceName>
+        </fields>
+        <fields>
+            <alias>BenefitDisbursement_DisbursementStatus</alias>
+            <sourceFieldName>BenefitDisbursement_DisbursementStatus</sourceFieldName>
+            <sourceName>Filter_Benefit_Disbursements_with_Benefit_Session</sourceName>
+        </fields>
+        <fields>
+            <alias>BenefitDisbursement_ProgramEnrollmentId</alias>
+            <sourceFieldName>BenefitDisbursement_ProgramEnrollmentId</sourceFieldName>
+            <sourceName>Filter_Benefit_Disbursements_with_Benefit_Session</sourceName>
+        </fields>
+        <fields>
+            <alias>CompletedBenefitSession_Id</alias>
+            <sourceFieldName>BenefitSession_Id</sourceFieldName>
+            <sourceName>Filter_Completed_Benefit_Sessions</sourceName>
+        </fields>
+        <joinKeys>
+            <primarySourceFieldName>BenefitSession_Id</primarySourceFieldName>
+            <secondarySourceFieldName>BenefitDisbursement_BenefitSessionId</secondarySourceFieldName>
+        </joinKeys>
+        <label>Join Completed Benefit Sessions with Benefit Disbursements</label>
+        <name>Join_Completed_Benefit_Sessions_with_Benefit_Disbursements</name>
+        <primarySourceName>Filter_Completed_Benefit_Sessions</primarySourceName>
+        <secondarySourceName>Filter_Benefit_Disbursements_with_Benefit_Session</secondarySourceName>
+        <type>LeftOuter</type>
+    </joins>
+    <joins>
+        <description>Associates each program enrollment with its related benefit disbursements from completed sessions.</description>
+        <fields>
+            <alias>BenefitDisbursement_BenefitSessionId</alias>
+            <sourceFieldName>BenefitDisbursement_BenefitSessionId</sourceFieldName>
+            <sourceName>Filter_Benefit_Disbursements_with_Benefit_Session</sourceName>
+        </fields>
+        <fields>
+            <alias>BenefitDisbursement_BenefitSessionStatus</alias>
+            <sourceFieldName>BenefitDisbursement_BenefitSessionStatus</sourceFieldName>
+            <sourceName>Filter_Benefit_Disbursements_with_Benefit_Session</sourceName>
+        </fields>
+        <fields>
+            <alias>BenefitDisbursement_DisbursementStatus</alias>
+            <sourceFieldName>BenefitDisbursement_DisbursementStatus</sourceFieldName>
+            <sourceName>Filter_Benefit_Disbursements_with_Benefit_Session</sourceName>
+        </fields>
+        <fields>
+            <alias>BenefitDisbursement_ProgramEnrollmentId</alias>
+            <sourceFieldName>BenefitDisbursement_ProgramEnrollmentId</sourceFieldName>
+            <sourceName>Filter_Benefit_Disbursements_with_Benefit_Session</sourceName>
+        </fields>
+        <fields>
+            <alias>ProgramEnrollment_Id</alias>
+            <sourceFieldName>ProgramEnrollment_Id</sourceFieldName>
+            <sourceName>Get_Program_Enrollments</sourceName>
+        </fields>
+        <joinKeys>
+            <primarySourceFieldName>ProgramEnrollment_Id</primarySourceFieldName>
+            <secondarySourceFieldName>BenefitDisbursement_ProgramEnrollmentId</secondarySourceFieldName>
+        </joinKeys>
+        <label>Join Program Enrollments with Benefit Disbursements</label>
+        <name>Join_Program_Enrollments_with_Benefit_Disbursements</name>
+        <primarySourceName>Get_Program_Enrollments</primarySourceName>
+        <secondarySourceName>Filter_Benefit_Disbursements_with_Benefit_Session</secondarySourceName>
+        <type>LeftOuter</type>
+    </joins>
+    <label>GPS Calculate Benefit Session and Program Enrollment Attendance Rate</label>
+    <processType>ProgramManagementRollups</processType>
+    <status>Active</status>
+    <transforms>
+        <description>Calculates the attendance rate for program enrollments based on the attendee count and the absentee count.</description>
+        <expressionFields>
+            <alias>SumSessionsAttendanceRate</alias>
+            <dataType>Numeric</dataType>
+            <decimalPlaces>2</decimalPlaces>
+            <expression>IF(({SumSessionsAttendedCount} + {SumSessionsAbsentCount} ) == 0 , null, {SumSessionsAttendedCount} / ({SumSessionsAttendedCount} + {SumSessionsAbsentCount})* 100)</expression>
+            <length>10</length>
+        </expressionFields>
+        <label>Calculate Attendance for Program Enrollments With Benefit Disbursements</label>
+        <name>Calculate_Attendance_for_Program_Enrollments_With_Benefit_Disbursements</name>
+        <sourceName>Calculate_Attendance_for_All_Program_Enrollments</sourceName>
+        <transformationType>Expression</transformationType>
+    </transforms>
+    <transforms>
+        <description>Calculates the attendance rate based on the attendee count and the absentee count.</description>
+        <expressionFields>
+            <alias>BnfSession_AttendanceRate</alias>
+            <dataType>Numeric</dataType>
+            <decimalPlaces>2</decimalPlaces>
+            <expression>IF(({BnfSession_SumAbsenteesCount} + {BnfSession_SumAttendeesCount}) == 0 , NULL, {BnfSession_SumAttendeesCount} / ({BnfSession_SumAbsenteesCount} + {BnfSession_SumAttendeesCount})* 100)</expression>
+            <length>10</length>
+        </expressionFields>
+        <label>Calculate Attendance Rate for Completed Benefit Sessions</label>
+        <name>Calculate_Attendance_Rate_for_Completed_Benefit_Sessions</name>
+        <sourceName>Calculate_Attendance_for_All_Benefit_Sessions</sourceName>
+        <transformationType>Expression</transformationType>
+    </transforms>
+    <transforms>
+        <description>Sets the absentees count and attendees count for the benefit sessions based on the status of the benefit disbursement.</description>
+        <expressionFields>
+            <alias>BnfDisb_AbsenteesCount</alias>
+            <dataType>Numeric</dataType>
+            <decimalPlaces>0</decimalPlaces>
+            <expression>IF( {BenefitDisbursement_DisbursementStatus} == &quot;Absent&quot;, 1, 0)</expression>
+            <length>10</length>
+        </expressionFields>
+        <expressionFields>
+            <alias>BnfDisb_AttendeesCount</alias>
+            <dataType>Numeric</dataType>
+            <decimalPlaces>0</decimalPlaces>
+            <expression>IF( {BenefitDisbursement_DisbursementStatus} == &quot;Completed&quot;, 1, 0)</expression>
+            <length>10</length>
+        </expressionFields>
+        <label>Set Attendance for All Benefit Sessions</label>
+        <name>Set_Attendance_for_All_Benefit_Sessions</name>
+        <sourceName>Join_Completed_Benefit_Sessions_with_Benefit_Disbursements</sourceName>
+        <transformationType>Expression</transformationType>
+    </transforms>
+    <transforms>
+        <description>Sets the absentees count, attendance rate, and attendees count to null for benefit sessions with a status other than completed.</description>
+        <expressionFields>
+            <alias>AbsenteesCountNull</alias>
+            <dataType>Numeric</dataType>
+            <decimalPlaces>0</decimalPlaces>
+            <expression>NULL</expression>
+            <length>10</length>
+        </expressionFields>
+        <expressionFields>
+            <alias>AttendanceRateNull</alias>
+            <dataType>Numeric</dataType>
+            <decimalPlaces>0</decimalPlaces>
+            <expression>NULL</expression>
+            <length>10</length>
+        </expressionFields>
+        <expressionFields>
+            <alias>AttendeesCountNull</alias>
+            <dataType>Numeric</dataType>
+            <decimalPlaces>0</decimalPlaces>
+            <expression>NULL</expression>
+            <length>10</length>
+        </expressionFields>
+        <label>Set Attendance for Incomplete Benefit Sessions</label>
+        <name>Set_Attendance_for_Incomplete_Benefit_Sessions</name>
+        <sourceName>Filter_Incomplete_Benefit_Sessions</sourceName>
+        <transformationType>Expression</transformationType>
+    </transforms>
+    <transforms>
+        <description>Sets the absentees count, attendance rate, and attendees count to null for program enrollments without related benefit disbursements.</description>
+        <expressionFields>
+            <alias>SessionsAbsentCountNull</alias>
+            <dataType>Numeric</dataType>
+            <decimalPlaces>0</decimalPlaces>
+            <expression>NULL</expression>
+            <length>10</length>
+        </expressionFields>
+        <expressionFields>
+            <alias>SessionsAttendanceRateNull</alias>
+            <dataType>Numeric</dataType>
+            <decimalPlaces>0</decimalPlaces>
+            <expression>NULL</expression>
+            <length>10</length>
+        </expressionFields>
+        <expressionFields>
+            <alias>SessionsAttendedCountNull</alias>
+            <dataType>Numeric</dataType>
+            <decimalPlaces>0</decimalPlaces>
+            <expression>NULL</expression>
+            <length>10</length>
+        </expressionFields>
+        <label>Set Attendance for Program Enrollments Without Benefit Disbursements</label>
+        <name>Set_Attendance_for_Program_Enrollments_Without_Benefit_Disbursements</name>
+        <sourceName>Filter_Program_Enrollments_Without_Benefit_Disbursements</sourceName>
+        <transformationType>Expression</transformationType>
+    </transforms>
+    <transforms>
+        <description>Sets the absentees count and attendees count for program enrollments based on the status of related benefit disbursements.</description>
+        <expressionFields>
+            <alias>SessionsAbsentCount</alias>
+            <dataType>Numeric</dataType>
+            <decimalPlaces>0</decimalPlaces>
+            <expression>IF( {BenefitDisbursement_DisbursementStatus} == &quot;Absent&quot;, 1, 0)</expression>
+            <length>10</length>
+        </expressionFields>
+        <expressionFields>
+            <alias>SessionsAttendedCount</alias>
+            <dataType>Numeric</dataType>
+            <decimalPlaces>0</decimalPlaces>
+            <expression>IF( {BenefitDisbursement_DisbursementStatus} == &quot;Completed&quot;, 1, 0)</expression>
+            <length>10</length>
+        </expressionFields>
+        <label>Set Attendance for Program Enrollments With Benefit Disbursements</label>
+        <name>Set_Attendance_for_Program_Enrollments_With_Benefit_Disbursements</name>
+        <sourceName>Filter_Program_Enrollments_with_Completed_Benefit_Sessions</sourceName>
+        <transformationType>Expression</transformationType>
+    </transforms>
+    <writebacks>
+        <canWrtbckToNonEditableFields>false</canWrtbckToNonEditableFields>
+        <description>Updates benefit session records with the calculated absentees counts, attendees counts, and attendance rates.</description>
+        <fields>
+            <isAutogenerated>false</isAutogenerated>
+            <runtimeParameter>false</runtimeParameter>
+            <sourceFieldName>CompletedBenefitSession_Id</sourceFieldName>
+            <targetFieldName>Id</targetFieldName>
+        </fields>
+        <fields>
+            <isAutogenerated>false</isAutogenerated>
+            <runtimeParameter>false</runtimeParameter>
+            <sourceFieldName>BnfSession_SumAbsenteesCount</sourceFieldName>
+            <targetFieldName>AbsenteesCount</targetFieldName>
+        </fields>
+        <fields>
+            <isAutogenerated>false</isAutogenerated>
+            <runtimeParameter>false</runtimeParameter>
+            <sourceFieldName>BnfSession_SumAttendeesCount</sourceFieldName>
+            <targetFieldName>AttendeesCount</targetFieldName>
+        </fields>
+        <fields>
+            <isAutogenerated>false</isAutogenerated>
+            <runtimeParameter>false</runtimeParameter>
+            <sourceFieldName>BnfSession_AttendanceRate</sourceFieldName>
+            <targetFieldName>AttendanceRate</targetFieldName>
+        </fields>
+        <isChangedRow>false</isChangedRow>
+        <isExistingDataset>false</isExistingDataset>
+        <label>Update Completed Benefit Sessions</label>
+        <name>Update_Completed_Benefit_Sessions</name>
+        <operationType>Update</operationType>
+        <shouldCreateTargetObject>false</shouldCreateTargetObject>
+        <sourceName>Calculate_Attendance_Rate_for_Completed_Benefit_Sessions</sourceName>
+        <storageType>sObject</storageType>
+        <targetObjectName>BenefitSession</targetObjectName>
+        <writebackSequence>1</writebackSequence>
+        <writebackUser>005Hu00000UXNSVIA5</writebackUser>
+    </writebacks>
+    <writebacks>
+        <canWrtbckToNonEditableFields>false</canWrtbckToNonEditableFields>
+        <description>Updates benefit session records with the calculated absentees counts, attendees counts, and attendance rates.</description>
+        <fields>
+            <isAutogenerated>false</isAutogenerated>
+            <runtimeParameter>false</runtimeParameter>
+            <sourceFieldName>BenefitSession_Id</sourceFieldName>
+            <targetFieldName>Id</targetFieldName>
+        </fields>
+        <fields>
+            <isAutogenerated>false</isAutogenerated>
+            <runtimeParameter>false</runtimeParameter>
+            <sourceFieldName>AttendanceRateNull</sourceFieldName>
+            <targetFieldName>AttendanceRate</targetFieldName>
+        </fields>
+        <fields>
+            <isAutogenerated>false</isAutogenerated>
+            <runtimeParameter>false</runtimeParameter>
+            <sourceFieldName>AttendeesCountNull</sourceFieldName>
+            <targetFieldName>AttendeesCount</targetFieldName>
+        </fields>
+        <fields>
+            <isAutogenerated>false</isAutogenerated>
+            <runtimeParameter>false</runtimeParameter>
+            <sourceFieldName>AbsenteesCountNull</sourceFieldName>
+            <targetFieldName>AbsenteesCount</targetFieldName>
+        </fields>
+        <isChangedRow>false</isChangedRow>
+        <isExistingDataset>false</isExistingDataset>
+        <label>Update Incomplete Benefit Sessions</label>
+        <name>Update_Incomplete_Benefit_Sessions</name>
+        <operationType>Update</operationType>
+        <shouldCreateTargetObject>false</shouldCreateTargetObject>
+        <sourceName>Set_Attendance_for_Incomplete_Benefit_Sessions</sourceName>
+        <storageType>sObject</storageType>
+        <targetObjectName>BenefitSession</targetObjectName>
+        <writebackSequence>3</writebackSequence>
+        <writebackUser>005Hu00000UXNSVIA5</writebackUser>
+    </writebacks>
+    <writebacks>
+        <canWrtbckToNonEditableFields>false</canWrtbckToNonEditableFields>
+        <description>Updates the absentees counts, attendees counts, and attendance rates for program enrollments that don’t have a related benefit disbursement to null values.</description>
+        <fields>
+            <isAutogenerated>false</isAutogenerated>
+            <runtimeParameter>false</runtimeParameter>
+            <sourceFieldName>ProgramEnrollment_Id</sourceFieldName>
+            <targetFieldName>Id</targetFieldName>
+        </fields>
+        <fields>
+            <isAutogenerated>false</isAutogenerated>
+            <runtimeParameter>false</runtimeParameter>
+            <sourceFieldName>SessionsAbsentCountNull</sourceFieldName>
+            <targetFieldName>SessionsAbsentCount</targetFieldName>
+        </fields>
+        <fields>
+            <isAutogenerated>false</isAutogenerated>
+            <runtimeParameter>false</runtimeParameter>
+            <sourceFieldName>SessionsAttendedCountNull</sourceFieldName>
+            <targetFieldName>SessionsAttendedCount</targetFieldName>
+        </fields>
+        <fields>
+            <isAutogenerated>false</isAutogenerated>
+            <runtimeParameter>false</runtimeParameter>
+            <sourceFieldName>SessionsAttendanceRateNull</sourceFieldName>
+            <targetFieldName>SessionsAttendanceRate</targetFieldName>
+        </fields>
+        <isChangedRow>false</isChangedRow>
+        <isExistingDataset>false</isExistingDataset>
+        <label>Update Program Enrollments Without Benefit Disbursements</label>
+        <name>Update_Program_Enrollments_Without_Benefit_Disbursements</name>
+        <operationType>Update</operationType>
+        <shouldCreateTargetObject>false</shouldCreateTargetObject>
+        <sourceName>Set_Attendance_for_Program_Enrollments_Without_Benefit_Disbursements</sourceName>
+        <storageType>sObject</storageType>
+        <targetObjectName>ProgramEnrollment</targetObjectName>
+        <writebackSequence>5</writebackSequence>
+        <writebackUser>005Hu00000UXNSVIA5</writebackUser>
+    </writebacks>
+    <writebacks>
+        <canWrtbckToNonEditableFields>false</canWrtbckToNonEditableFields>
+        <description>Updates program enrollment records with the calculated absentees counts, attendees counts, and attendance rates.</description>
+        <fields>
+            <isAutogenerated>false</isAutogenerated>
+            <runtimeParameter>false</runtimeParameter>
+            <sourceFieldName>ProgramEnrollment_Id</sourceFieldName>
+            <targetFieldName>Id</targetFieldName>
+        </fields>
+        <fields>
+            <isAutogenerated>false</isAutogenerated>
+            <runtimeParameter>false</runtimeParameter>
+            <sourceFieldName>SumSessionsAbsentCount</sourceFieldName>
+            <targetFieldName>SessionsAbsentCount</targetFieldName>
+        </fields>
+        <fields>
+            <isAutogenerated>false</isAutogenerated>
+            <runtimeParameter>false</runtimeParameter>
+            <sourceFieldName>SumSessionsAttendedCount</sourceFieldName>
+            <targetFieldName>SessionsAttendedCount</targetFieldName>
+        </fields>
+        <fields>
+            <isAutogenerated>false</isAutogenerated>
+            <runtimeParameter>false</runtimeParameter>
+            <sourceFieldName>SumSessionsAttendanceRate</sourceFieldName>
+            <targetFieldName>SessionsAttendanceRate</targetFieldName>
+        </fields>
+        <isChangedRow>false</isChangedRow>
+        <isExistingDataset>false</isExistingDataset>
+        <label>Update Program Enrollments With Benefit Disbursements</label>
+        <name>Update_Program_Enrollments_With_Benefit_Disbursements</name>
+        <operationType>Update</operationType>
+        <shouldCreateTargetObject>false</shouldCreateTargetObject>
+        <sourceName>Calculate_Attendance_for_Program_Enrollments_With_Benefit_Disbursements</sourceName>
+        <storageType>sObject</storageType>
+        <targetObjectName>ProgramEnrollment</targetObjectName>
+        <writebackSequence>4</writebackSequence>
+        <writebackUser>005Hu00000UXNSVIA5</writebackUser>
+    </writebacks>
+</BatchCalcJobDefinition>

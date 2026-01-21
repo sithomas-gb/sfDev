@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Supporting Documentation</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>ApplicationStageDefinitionId</name>
+            <valueLiteral>13bHu0000000H0RIAU</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>6</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>IndividualApplicationTask</itemEntityType>
+        <name>Supporting Documentation</name>
+        <uniqueName>Supporting_Documentation_472ff23f_a11e_11ef_99c9_45882b1a056c</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>ApplicationStageDefinitionId</name>
+            <valueLiteral>13bHu0000000H0NIAU</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Project Location</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>3</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>IndividualApplicationTask</itemEntityType>
+        <name>Project Location</name>
+        <uniqueName>Project_Location_472f55fb_a11e_11ef_99c9_8793484dfc7e</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>ApplicationStageDefinitionId</name>
+            <valueLiteral>13bHu0000000H0QIAU</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Proposed Budget</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>4</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>IndividualApplicationTask</itemEntityType>
+        <name>Proposed Budget</name>
+        <uniqueName>Proposed_Budget_472f2ee9_a11e_11ef_99c9_5973d4291eba</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>ApplicationStageDefinitionId</name>
+            <valueLiteral>13bHu0000000H0SIAU</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Budget Flow</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>7</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>IndividualApplicationTask</itemEntityType>
+        <name>Budget Flow</name>
+        <uniqueName>Budget_Flow_472fa41d_a11e_11ef_99c9_d9261dbdcb2f</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Funding Request Details</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>ApplicationStageDefinitionId</name>
+            <valueLiteral>13bHu0000000H0VIAU</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>2</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>IndividualApplicationTask</itemEntityType>
+        <name>Funding Request Details</name>
+        <uniqueName>Funding_Request_Details_47304061_a11e_11ef_99c9_43f75c474f77</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>ApplicationStageDefinitionId</name>
+            <valueLiteral>13bHu0000000H0PIAU</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Application Objectives and Supporting Activities</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>5</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>IndividualApplicationTask</itemEntityType>
+        <name>Application Objectives and Supporting Activities</name>
+        <uniqueName>Application_Objectives_and_Supporting_Activ_47306773_a11e_11ef_99c9_6ff152614a50</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>ApplicationStageDefinitionId</name>
+            <valueLiteral>13bHu0000000H0OIAU</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Application Overview</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>1</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>IndividualApplicationTask</itemEntityType>
+        <name>Application Overview</name>
+        <uniqueName>Application_Overview_472ee0c7_a11e_11ef_99c9_23f97008e4a7</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>DocumentChecklistItem</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Certificate of Authority</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>DocumentChecklistItem</itemEntityType>
+            <name>DocumentTypeId</name>
+            <valueLiteral>0deHu000000LOhVIAW</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>1</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>DocumentChecklistItem</itemEntityType>
+        <name>Certificate of Authority</name>
+        <uniqueName>Certificate_of_Authority_c0c45dfd_a11e_11ef_99c9_91f27a1c9332</uniqueName>
+    </actionPlanTemplateItem>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Grantmaking AF DF</name>
+    <targetEntityType>IndividualApplication</targetEntityType>
+    <uniqueName>Grantmaking_AF_DF_47176125_a11e_11ef_99c9_9351dd03eaed</uniqueName>
+</ActionPlanTemplate>

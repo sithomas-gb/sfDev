@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <folderShares>
+        <accessLevel>Manage</accessLevel>
+        <sharedTo>siju@justklouds.com2026_01_5_11-13-38.demo</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <name>Grantmaking</name>
+</ReportFolder>

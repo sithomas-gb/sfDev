@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>AssessmentTaskDefinitionId</name>
+            <valueLiteral>0Z4Hu000000TrLgKAK</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Deck Inspection</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>AssessmentTask</itemEntityType>
+        <name>Deck Inspection</name>
+        <uniqueName>Deck_Inspection_2505ead5_ae2d_11ee_8c40_9b9163e56e4f</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanType>Retail</actionPlanType>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Deck Inspection Type</name>
+    <targetEntityType>Visit</targetEntityType>
+    <uniqueName>Deck_Inspection_Type_1c3d3aab_ae2d_11ee_8c40_0fe99aac94bb</uniqueName>
+</ActionPlanTemplate>

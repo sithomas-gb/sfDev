@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_PartyIncome</fullName>
+    <columns>Name</columns>
+    <columns>IncomeAmount</columns>
+    <columns>CreatedDate</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Party Incomes</label>
+</ListView>

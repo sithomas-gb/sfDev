@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Project Details</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>2</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>IndividualApplicationTask</itemEntityType>
+        <name>Project Details</name>
+        <uniqueName>Project_Details_2c143bc3_95fe_11ef_85e1_b335bb4e40d9</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Grant Request Details</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>3</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>IndividualApplicationTask</itemEntityType>
+        <name>Grant Request Details</name>
+        <uniqueName>Grant_Request_Details_3261b32d_95fe_11ef_85e1_d53ab78cdc5b</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>IndividualApplicationTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Applicant Information</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>1</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>IndividualApplicationTask</itemEntityType>
+        <name>Applicant Information</name>
+        <uniqueName>Applicant_Information_24b1fa20_95fe_11ef_85e1_afffec6ae3a6</uniqueName>
+    </actionPlanTemplateItem>
+    <description>Application for Community Initiatives Funding Opportunity</description>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Community Initiatives Application</name>
+    <targetEntityType>IndividualApplication</targetEntityType>
+    <uniqueName>Community_Initiatives_Application_714b5c78_9549_11ef_9e34_b9c7f2099b20</uniqueName>
+</ActionPlanTemplate>

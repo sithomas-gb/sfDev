@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Rent or Mortage</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is the client&apos;s monthly rent or mortgage expense?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Currency</dataType>
+    <developerName>Rent_or_Mortage</developerName>
+    <name>Rent or Mortage</name>
+    <questionCategory>Referral</questionCategory>
+</AssessmentQuestion>

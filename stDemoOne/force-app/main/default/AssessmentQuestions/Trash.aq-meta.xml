@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Trash</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Are they failing to put trash out for weekly pickup?</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Trash</developerName>
+    <name>Trash</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

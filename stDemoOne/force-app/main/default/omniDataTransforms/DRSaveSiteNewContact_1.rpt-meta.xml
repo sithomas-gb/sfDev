@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;SiteContact&quot; : null,
+    &quot;SiteOperatingHours&quot; : null,
+    &quot;SetValueWed&quot; : null,
+    &quot;DataRaptorCreateSiteHourDayMon&quot; : null,
+    &quot;DataRaptorCreateSiteHourDaySUN&quot; : null,
+    &quot;SetValueSAT&quot; : null,
+    &quot;SetValueFRI&quot; : null,
+    &quot;DataRaptorCreateSiteHourDayFRI&quot; : null,
+    &quot;SetValueTues&quot; : null,
+    &quot;DataRaptorCreateSiteHourDayTues&quot; : null,
+    &quot;SetLocationIdasParentLocationId&quot; : null,
+    &quot;DRUpdateParentLocationwithAddress&quot; : null,
+    &quot;DRCreateLocationAddressFromSite&quot; : null,
+    &quot;SiteInfo&quot; : null,
+    &quot;Disclosure&quot; : null,
+    &quot;DataRaptorCreateSiteHourDayThurs&quot; : null,
+    &quot;DataRaptorCreateSiteHourDayWed&quot; : null,
+    &quot;SetValueSiteId&quot; : null,
+    &quot;DataRaptorCreateSiteHourDaySAT&quot; : null,
+    &quot;SetValueMon&quot; : null,
+    &quot;DataRaptorCreateSite&quot; : null,
+    &quot;SetValueSUN&quot; : null,
+    &quot;DataRaptorSaveSiteContact&quot; : null,
+    &quot;NavigateAction1&quot; : null,
+    &quot;SetValuesTEST&quot; : null,
+    &quot;SetValuesSiteContactfromUser&quot; : null,
+    &quot;DRGetCurrentUserasContact&quot; : null,
+    &quot;SetValueThurs&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;SiteContact&quot; : {
+    &quot;Block4&quot; : {
+      &quot;SiteContactName&quot; : null,
+      &quot;SiteContactPhoneNumber&quot; : null
+    },
+    &quot;MyselfSiteContact&quot; : null,
+    &quot;Block3&quot; : {
+      &quot;SiteContactBestTimeCallEnd&quot; : null,
+      &quot;SiteContactBestTimeCallStart&quot; : null
+    },
+    &quot;SiteContactAddress-Block&quot; : {
+      &quot;SiteContactAddress&quot; : null,
+      &quot;ContactCity&quot; : null,
+      &quot;ContactState&quot; : null,
+      &quot;ContactZipcode&quot; : null,
+      &quot;ContactStreet&quot; : null
+    }
+  },
+  &quot;SiteOperatingHours&quot; : {
+    &quot;CustomLWC1&quot; : null
+  },
+  &quot;SiteInfo&quot; : {
+    &quot;SiteAddress__c-Block&quot; : {
+      &quot;SiteAddress__c&quot; : null,
+      &quot;SiteCity&quot; : null,
+      &quot;SiteState&quot; : null,
+      &quot;SiteZipcode&quot; : null,
+      &quot;SiteStreet&quot; : null
+    },
+    &quot;SiteName&quot; : null,
+    &quot;SIDN__c&quot; : null,
+    &quot;Languages__c&quot; : null,
+    &quot;BlkSiteDetails&quot; : {
+      &quot;SitePublic__c&quot; : null,
+      &quot;SiteApptOnly__c&quot; : null,
+      &quot;SiteMobileOnly__c&quot; : null,
+      &quot;BlkSiteContact&quot; : {
+        &quot;BlkNewContact&quot; : {
+          &quot;SiteContactPhone&quot; : null,
+          &quot;NewContactName&quot; : null
+        },
+        &quot;AddContact&quot; : null,
+        &quot;SiteContactId&quot; : null
+      }
+    },
+    &quot;ProgramType__c&quot; : null,
+    &quot;Block1&quot; : {
+      &quot;BlkServiceSystems&quot; : {
+        &quot;ServiceSystemSelectionOtherSelected&quot; : null,
+        &quot;SiteOfferOtherServiceSystem__c&quot; : null,
+        &quot;SiteOfferServiceSystems__c&quot; : null
+      },
+      &quot;Block2&quot; : {
+        &quot;SiteOfferAFMType__c&quot; : null
+      },
+      &quot;SiteOfferPrepareLastYearReturns__c&quot; : null,
+      &quot;SiteOfferCAA__c&quot; : null,
+      &quot;SiteOfferAFMReturns__c&quot; : null
+    },
+    &quot;BlkFiling&quot; : {
+      &quot;FedeFile__c&quot; : null,
+      &quot;StateeFile__c&quot; : null
+    },
+    &quot;BlkQuestions&quot; : {
+      &quot;SiteVoterReg__c&quot; : null,
+      &quot;SiteofferFinancialServices__c&quot; : null,
+      &quot;SitePrepareForeign__c&quot; : null,
+      &quot;SiteFormTerritoryOffice__c&quot; : null
+    }
+  },
+  &quot;Disclosure&quot; : {
+    &quot;Disclosure1&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>DRSaveSiteNewContact</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRSaveSiteNewContactCustom0jI5e000000PB25EAGItem2</globalKey>
+        <inputFieldName>SiteContact:BlkSiteContactNew:SiteContactPhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRSaveSiteNewContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Phone</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRSaveSiteNewContactCustom0jI5e000000PB25EAGItem3</globalKey>
+        <inputFieldName>ContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRSaveSiteNewContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRSaveSiteNewContactCustom0jI5e000000PB25EAGItem4</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRSaveSiteNewContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRSaveSiteNewContactCustom0jI5e000000PB25EAGItem5</globalKey>
+        <inputFieldName>SiteContact:BlkSiteContactNew:SiteContactFirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRSaveSiteNewContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FirstName</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRSaveSiteNewContactCustom0jI5e000000PB25EAGItem6</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRSaveSiteNewContact</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>VolunteerSite__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRSaveSiteNewContactCustom0jI5e000000PB25EAGItem0</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRSaveSiteNewContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountId</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRSaveSiteNewContactCustom0jI5e000000PB25EAGItem1</globalKey>
+        <inputFieldName>SiteContact:BlkSiteContactNew:SiteContactLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRSaveSiteNewContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LastName</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;vlcTimeTracking&quot; : {
+    &quot;SiteContact&quot; : null,
+    &quot;SiteOperatingHours&quot; : null,
+    &quot;SetValueWed&quot; : null,
+    &quot;DataRaptorCreateSiteHourDayMon&quot; : null,
+    &quot;DataRaptorCreateSiteHourDaySUN&quot; : null,
+    &quot;SetValueSAT&quot; : null,
+    &quot;SetValueFRI&quot; : null,
+    &quot;DataRaptorCreateSiteHourDayFRI&quot; : null,
+    &quot;SetValueTues&quot; : null,
+    &quot;DataRaptorCreateSiteHourDayTues&quot; : null,
+    &quot;SetLocationIdasParentLocationId&quot; : null,
+    &quot;DRUpdateParentLocationwithAddress&quot; : null,
+    &quot;DRCreateLocationAddressFromSite&quot; : null,
+    &quot;SiteInfo&quot; : null,
+    &quot;Disclosure&quot; : null,
+    &quot;DataRaptorCreateSiteHourDayThurs&quot; : null,
+    &quot;DataRaptorCreateSiteHourDayWed&quot; : null,
+    &quot;SetValueSiteId&quot; : null,
+    &quot;DataRaptorCreateSiteHourDaySAT&quot; : null,
+    &quot;SetValueMon&quot; : null,
+    &quot;DataRaptorCreateSite&quot; : null,
+    &quot;SetValueSUN&quot; : null,
+    &quot;DataRaptorSaveSiteContact&quot; : null,
+    &quot;NavigateAction1&quot; : null,
+    &quot;SetValuesTEST&quot; : null,
+    &quot;SetValuesSiteContactfromUser&quot; : null,
+    &quot;DRGetCurrentUserasContact&quot; : null,
+    &quot;SetValueThurs&quot; : null
+  },
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;userTimeZone&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;ContextId&quot; : null,
+  &quot;SiteContact&quot; : {
+    &quot;Block4&quot; : {
+      &quot;SiteContactName&quot; : null,
+      &quot;SiteContactPhoneNumber&quot; : null
+    },
+    &quot;MyselfSiteContact&quot; : null,
+    &quot;Block3&quot; : {
+      &quot;SiteContactBestTimeCallEnd&quot; : null,
+      &quot;SiteContactBestTimeCallStart&quot; : null
+    },
+    &quot;SiteContactAddress-Block&quot; : {
+      &quot;SiteContactAddress&quot; : null,
+      &quot;ContactCity&quot; : null,
+      &quot;ContactState&quot; : null,
+      &quot;ContactZipcode&quot; : null,
+      &quot;ContactStreet&quot; : null
+    }
+  },
+  &quot;SiteOperatingHours&quot; : {
+    &quot;CustomLWC1&quot; : null
+  },
+  &quot;SiteInfo&quot; : {
+    &quot;SiteAddress__c-Block&quot; : {
+      &quot;SiteAddress__c&quot; : null,
+      &quot;SiteCity&quot; : null,
+      &quot;SiteState&quot; : null,
+      &quot;SiteZipcode&quot; : null,
+      &quot;SiteStreet&quot; : null
+    },
+    &quot;SiteName&quot; : null,
+    &quot;SIDN__c&quot; : null,
+    &quot;Languages__c&quot; : null,
+    &quot;BlkSiteDetails&quot; : {
+      &quot;SitePublic__c&quot; : null,
+      &quot;SiteApptOnly__c&quot; : null,
+      &quot;SiteMobileOnly__c&quot; : null,
+      &quot;BlkSiteContact&quot; : {
+        &quot;BlkNewContact&quot; : {
+          &quot;SiteContactPhone&quot; : null,
+          &quot;NewContactName&quot; : null
+        },
+        &quot;AddContact&quot; : null,
+        &quot;SiteContactId&quot; : null
+      }
+    },
+    &quot;ProgramType__c&quot; : null,
+    &quot;Block1&quot; : {
+      &quot;BlkServiceSystems&quot; : {
+        &quot;ServiceSystemSelectionOtherSelected&quot; : null,
+        &quot;SiteOfferOtherServiceSystem__c&quot; : null,
+        &quot;SiteOfferServiceSystems__c&quot; : null
+      },
+      &quot;Block2&quot; : {
+        &quot;SiteOfferAFMType__c&quot; : null
+      },
+      &quot;SiteOfferPrepareLastYearReturns__c&quot; : null,
+      &quot;SiteOfferCAA__c&quot; : null,
+      &quot;SiteOfferAFMReturns__c&quot; : null
+    },
+    &quot;BlkFiling&quot; : {
+      &quot;FedeFile__c&quot; : null,
+      &quot;StateeFile__c&quot; : null
+    },
+    &quot;BlkQuestions&quot; : {
+      &quot;SiteVoterReg__c&quot; : null,
+      &quot;SiteofferFinancialServices__c&quot; : null,
+      &quot;SitePrepareForeign__c&quot; : null,
+      &quot;SiteFormTerritoryOffice__c&quot; : null
+    }
+  },
+  &quot;Disclosure&quot; : {
+    &quot;Disclosure1&quot; : null
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRSaveSiteNewContact_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

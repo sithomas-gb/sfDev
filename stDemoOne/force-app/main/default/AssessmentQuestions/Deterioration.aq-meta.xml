@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Deterioration</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Are there any visible signs of deterioration or secondary hazards (e.g., cracks, leaks, or exposed wires) that may worsen the situation?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextArea</dataType>
+    <developerName>Deterioration</developerName>
+    <name>Deterioration</name>
+    <questionCategory>Investigation</questionCategory>
+</AssessmentQuestion>

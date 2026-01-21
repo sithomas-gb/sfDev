@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Inspect Facility Damage</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>DefinitionReferenceId</name>
+            <valueLiteral>0osHu000000H2sbIAC</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>OmniAssessmentTask</itemEntityType>
+        <name>Inspect Facility Damage</name>
+        <uniqueName>Inspect_Facility_Damage_b5f07c8c_9098_11ef_8ed7_a53d15557d78</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanType>Retail</actionPlanType>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Damage Assessment</name>
+    <targetEntityType>Case</targetEntityType>
+    <uniqueName>Damage_Assessment_a2909e16_9098_11ef_8ed7_abf76a2c3a97</uniqueName>
+</ActionPlanTemplate>

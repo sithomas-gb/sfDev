@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>SignatureTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>EH Representative</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>1</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>SignatureTask</itemEntityType>
+        <name>EH Representative</name>
+        <uniqueName>EH_Representative_e3a066f4_ae2f_11ee_8c40_856a1f30d723</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Employee Health and Hygienic Practices</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>AssessmentTaskDefinitionId</name>
+            <valueLiteral>0Z4Hu000000TrLlKAK</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>AssessmentTask</itemEntityType>
+        <name>Employee Health and Hygienic Practices</name>
+        <uniqueName>Employee_Health_and_Hygienic_Practices_ca1b32aa_ae2f_11ee_8c40_cd8acb45ac72</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Preventing Contamination by Hands</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>AssessmentTask</itemEntityType>
+            <name>AssessmentTaskDefinitionId</name>
+            <valueLiteral>0Z4Hu000000TrLkKAK</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>AssessmentTask</itemEntityType>
+        <name>Preventing Contamination by Hands</name>
+        <uniqueName>Preventing_Contamination_by_Hands_c27afcee_ae2f_11ee_8c40_cdbe8b985f00</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>SignatureTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Employee</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>2</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>SignatureTask</itemEntityType>
+        <name>Employee</name>
+        <uniqueName>Employee_eb6059ae_ae2f_11ee_8c40_89d003bc47dc</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanType>Retail</actionPlanType>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Food Safety Program Official Inspection Report</name>
+    <targetEntityType>Visit</targetEntityType>
+    <uniqueName>Food_Safety_Program_Official_Inspection_Rep_ab3d2171_ae2f_11ee_8c40_015742da21ae</uniqueName>
+</ActionPlanTemplate>

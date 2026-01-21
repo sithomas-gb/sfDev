@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;Visit&quot; : {
+    &quot;StartTime&quot; : &quot;2024-02-23T22:00:31.000Z&quot;,
+    &quot;VisitType&quot; : &quot;0fJHu0000000GaiMAE&quot;,
+    &quot;Name&quot; : &quot;00000078&quot;
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>false</isManagedUsingStdDesigner>
+    <name>LPITransformVisitDataForDocument2V1</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>16339ed9-5817-4e66-9ccf-f8da60c60de7</globalKey>
+        <inputFieldName>Visit:StartTime</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LPITransformVisitDataForDocument2V1</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>VisitStartTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>56bdaedf-6139-4085-888d-c62d856bafc8</globalKey>
+        <inputFieldName>Visit:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LPITransformVisitDataForDocument2V1</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>VisitName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c699f6ba-4358-40d3-abee-7c5951e47856</globalKey>
+        <inputFieldName>Visit:VisitType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>LPITransformVisitDataForDocument2V1</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>VisitTypeName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>Document Template</outputType>
+    <previewJsonData>{
+  &quot;Visit&quot; : {
+    &quot;StartTime&quot; : &quot;2024-02-23T22:00:31.000Z&quot;,
+    &quot;VisitType&quot; : &quot;0fJHu0000000GaiMAE&quot;,
+    &quot;Name&quot; : &quot;00000078&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <targetOutputFileName>InspectionReport(Version 1)</targetOutputFileName>
+    <type>Transform</type>
+    <uniqueName>LPITransformVisitDataForDocument2V1_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CCM_Import_Case_Participants</fullName>
+    <availability>online</availability>
+    <description>Copies the Case Participants and creates Case Proceeding Participants</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Import Case Participants</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>/flow/CCM_Import_Case_Participants?recordId={!CaseProceeding.Id}&amp;retURL={!CaseProceeding.Id}</url>
+</WebLink>

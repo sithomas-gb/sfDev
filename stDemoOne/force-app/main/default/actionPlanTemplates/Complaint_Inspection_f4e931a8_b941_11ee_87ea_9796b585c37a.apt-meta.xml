@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanType>Retail</actionPlanType>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Complaint Inspection</name>
+    <targetEntityType>Visit</targetEntityType>
+    <uniqueName>Complaint_Inspection_f4e931a8_b941_11ee_87ea_9796b585c37a</uniqueName>
+</ActionPlanTemplate>

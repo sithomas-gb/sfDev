@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Medical Expenses</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What are the client&apos;s total monthly medical expenses?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Integer</dataType>
+    <developerName>Medical_Expenses</developerName>
+    <name>Medical Expenses</name>
+    <questionCategory>Referral</questionCategory>
+</AssessmentQuestion>

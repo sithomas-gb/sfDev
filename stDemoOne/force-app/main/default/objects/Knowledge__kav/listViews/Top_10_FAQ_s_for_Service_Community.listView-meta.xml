@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Top_10_FAQ_s_for_Service_Community</fullName>
+    <columns>LAST_PUBLISHED_DATE</columns>
+    <columns>TITLE</columns>
+    <columns>ABSTRACT</columns>
+    <columns>gps_Is_Top_Ten_LPI__c</columns>
+    <columns>gps_Image__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PUBLISH_STATUS</field>
+        <operation>equals</operation>
+        <value>2</value>
+    </filters>
+    <filters>
+        <field>LANGUAGE</field>
+        <operation>equals</operation>
+        <value>en_US</value>
+    </filters>
+    <filters>
+        <field>gps_Is_a_Top_10_FAQ__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Top 10 FAQ&apos;s for Service Community</label>
+</ListView>

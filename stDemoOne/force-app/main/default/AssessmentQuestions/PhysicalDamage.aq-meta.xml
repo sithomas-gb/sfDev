@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>PhysicalDamage</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is the extent of the physical damage to the facility</questionText>
+        <responseValues>Structural Damage
+Equipment Malfunction
+Broken Infrastructure</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>PhysicalDamage</developerName>
+    <name>PhysicalDamage</name>
+    <questionCategory>Investigation</questionCategory>
+</AssessmentQuestion>

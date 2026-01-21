@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_IndividualApplications</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>LicenseType</columns>
+    <columns>AppliedDate</columns>
+    <columns>Status</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FundingOpportunity</field>
+        <operation>equals</operation>
+        <value>2024-2025 Relief &amp; Reinvestment Grant</value>
+    </filters>
+    <label>All Individual Applications</label>
+</ListView>

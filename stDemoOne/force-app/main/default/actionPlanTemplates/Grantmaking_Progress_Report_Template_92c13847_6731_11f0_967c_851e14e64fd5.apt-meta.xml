@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>FundingAwardRqmtSection</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>General Progress Report</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>FundingAwardRqmtSection</itemEntityType>
+            <name>ApplicationStageDefinitionId</name>
+            <valueLiteral>13bHu0000000H0bIAE</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>1</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>FundingAwardRqmtSection</itemEntityType>
+        <name>General Progress Report</name>
+        <uniqueName>General_Progress_Report_a52a5a83_6731_11f0_967c_493e48c64482</uniqueName>
+    </actionPlanTemplateItem>
+    <description>Used to generate progress reports on funding award requirement records</description>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Grantmaking Progress Report Template</name>
+    <targetEntityType>FundingAwardRequirement</targetEntityType>
+    <uniqueName>Grantmaking_Progress_Report_Template_92c13847_6731_11f0_967c_851e14e64fd5</uniqueName>
+</ActionPlanTemplate>

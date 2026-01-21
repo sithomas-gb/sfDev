@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>NatureOfInjury</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Nature of Injury</questionText>
+        <responseValues>Stress
+Spine
+Ankle
+Broken Arm
+Broken Leg</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Multiselect</dataType>
+    <developerName>PSS_SI_v1_NatureOfInjury</developerName>
+    <name>NatureOfInjury</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

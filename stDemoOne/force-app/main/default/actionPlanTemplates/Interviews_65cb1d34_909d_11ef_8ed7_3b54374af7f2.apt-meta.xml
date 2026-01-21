@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Injured Party Interview</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>DefinitionReferenceId</name>
+            <valueLiteral>0osHu000000H2sdIAC</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>1</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>OmniAssessmentTask</itemEntityType>
+        <name>Injured Party Interview</name>
+        <uniqueName>Injured_Party_Interview_6a9e0231_909d_11ef_8ed7_47e609ceae0c</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Witness Interviews</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>DefinitionReferenceId</name>
+            <valueLiteral>0osHu000000H2scIAC</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>2</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>OmniAssessmentTask</itemEntityType>
+        <name>Witness Interviews</name>
+        <uniqueName>Witness_Interviews_6fedb881_909d_11ef_8ed7_cf4e25f26ada</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanType>Retail</actionPlanType>
+    <description>Used for Workplace Safety Violation Interviews</description>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Interviews</name>
+    <targetEntityType>Case</targetEntityType>
+    <uniqueName>Interviews_65cb1d34_909d_11ef_8ed7_3b54374af7f2</uniqueName>
+</ActionPlanTemplate>

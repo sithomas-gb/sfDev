@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Youth Justice Checkin Assessment</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>DefinitionReferenceId</name>
+            <valueLiteral>0osHu000000H2sZIAS</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>false</isRequired>
+        <itemEntityType>OmniAssessmentTask</itemEntityType>
+        <name>Youth Justice Checkin Assessment</name>
+        <uniqueName>Youth_Justice_Checkin_Assessment_31fffb49_9b81_11ee_a0ba_333eceafac3b</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanType>Retail</actionPlanType>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Youth Justice Check-In</name>
+    <targetEntityType>CarePlan</targetEntityType>
+    <uniqueName>Youth_Justice_Check_In_23d8ef2a_9b81_11ee_a0ba_a18ae3cc1d82</uniqueName>
+</ActionPlanTemplate>

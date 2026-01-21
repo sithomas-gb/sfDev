@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Interview Questions for Senior Software Engineer</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>DefinitionReferenceId</name>
+            <valueLiteral>0osHu000000H2seIAC</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>1</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>OmniAssessmentTask</itemEntityType>
+        <name>Interview Questions for Senior Software Engineer</name>
+        <uniqueName>Interview_Questions_for_Senior_Software_Eng_af01fa83_a12c_11ef_b3b6_1d1cf043f541</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanType>Retail</actionPlanType>
+    <isAdHocItemCreationEnabled>true</isAdHocItemCreationEnabled>
+    <name>Senior Software Engineer Interview</name>
+    <targetEntityType>ApplicationFormEvaluation</targetEntityType>
+    <uniqueName>Senior_Software_Engineer_Interview_a93a0709_a12c_11ef_b3b6_c103f29de34d</uniqueName>
+</ActionPlanTemplate>

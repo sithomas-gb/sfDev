@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+  <apiVersion>63.0</apiVersion>
+  <isExposed>true</isExposed>
+  <targets>
+    <target>lightning__RecordPage</target>
+    <target>lightning__AppPage</target>
+    <target>lightning__FlowScreen</target>
+  </targets>
+  <targetConfigs>
+    <targetConfig targets="lightning__RecordPage, lightning__AppPage">
+      <property name="cardTitle" type="String" label="Card Title"/>
+      <property name="cardTitleColor" type="String" label="Card Title Color"/>
+      <property name="cardIcon" type="String" label="Card Icon"/>
+      <property name="buttonIcon" type="String" label="Button Icon"/>
+      <property name="intervalTime" type="Integer" label="Interval Time"/>
+      <property name="originalStepsWrapper" type="String" label="Steps (Label|Icon,Label|Icon)"/>
+      <property name="toastMessage" type="String" label="Toast Message"/>
+    </targetConfig>
+  </targetConfigs>
+</LightningComponentBundle>

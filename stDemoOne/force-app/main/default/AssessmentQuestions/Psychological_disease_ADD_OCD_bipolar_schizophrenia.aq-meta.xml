@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Psychological disease ADD, OCD, bipolar, schizophrenia</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>ADD, OCD, bipolar, schizophrenia</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Psychological_disease_ADD_OCD_bipolar_schizophrenia</developerName>
+    <formulaResponseDataType>Text</formulaResponseDataType>
+    <name>Psychological disease ADD, OCD, bipolar, schizophrenia</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>Psychological_disease_Group</relatedQuestion>
+</AssessmentQuestion>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Family History Alcohol</name>
+        <optionSourceResponseValue>true</optionSourceResponseValue>
+        <questionText>Alcohol</questionText>
+        <status>Active</status>
+        <versionNumber>2</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Family_History_Alcohol</developerName>
+    <formulaResponseDataType>Text</formulaResponseDataType>
+    <name>Family History Alcohol</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>Family_History_Group</relatedQuestion>
+</AssessmentQuestion>

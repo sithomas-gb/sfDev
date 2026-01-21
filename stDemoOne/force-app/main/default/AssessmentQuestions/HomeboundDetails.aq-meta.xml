@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Homebound Details</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Select all that apply</questionText>
+        <responseValues>Applicant needs supportive device to leave home
+Applicant needs another person&apos;s help device to leave home
+Patient leaves home infrequently for essential tasks</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>RadioGroup</dataType>
+    <developerName>HomeboundDetails</developerName>
+    <name>Homebound Details</name>
+    <questionCategory>Services Assessment</questionCategory>
+    <relatedQuestion>Homebound</relatedQuestion>
+</AssessmentQuestion>

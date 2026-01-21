@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Skilled Nursing</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Applicant needs skilled nursing or therapy?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>SkilledNursing</developerName>
+    <name>Skilled Nursing</name>
+    <questionCategory>Services Assessment</questionCategory>
+</AssessmentQuestion>

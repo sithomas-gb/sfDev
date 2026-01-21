@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Search Property</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>DefinitionReferenceId</name>
+            <valueLiteral>0osHu000000H2sgIAC</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>2</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>OmniAssessmentTask</itemEntityType>
+        <name>Search Property</name>
+        <uniqueName>Search_Property_b2381462_a1ca_11ef_beda_8d15310e5226</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Interrogate Property Owner</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>DefinitionReferenceId</name>
+            <valueLiteral>0osHu000000H2sfIAC</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>1</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>OmniAssessmentTask</itemEntityType>
+        <name>Interrogate Property Owner</name>
+        <uniqueName>Interrogate_Property_Owner_7c96a36b_a1c9_11ef_beda_5b920113d6bc</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanType>Retail</actionPlanType>
+    <isAdHocItemCreationEnabled>true</isAdHocItemCreationEnabled>
+    <name>Investigate Property - Case</name>
+    <targetEntityType>Case</targetEntityType>
+    <uniqueName>Investigate_Property_Case_3685e438_a1c8_11ef_beda_2f83650d539a</uniqueName>
+</ActionPlanTemplate>

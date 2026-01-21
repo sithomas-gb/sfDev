@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Opioid Instructions</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>This tool should be administered to patients upon an initial visit prior to beginning opioid therapy for pain management. A score of 3 or lower indicates low risk for future opioid abuse, a score of 4 to 7 indicates moderate risk for opioid abuse, and a score of 8 or higher indicates a high risk for opioid abuse.</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextBlock</dataType>
+    <developerName>Opioid_Instructions</developerName>
+    <name>Opioid Instructions</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

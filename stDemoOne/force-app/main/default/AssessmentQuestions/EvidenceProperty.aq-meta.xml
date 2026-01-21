@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>EvidenceProperty</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Is there evidence at the property?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>EvidenceProperty</developerName>
+    <name>EvidenceProperty</name>
+    <questionCategory>Investigation</questionCategory>
+</AssessmentQuestion>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>gps_My_Applications</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>Opportunity</columns>
+    <columns>SubmissionDate</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account</field>
+        <operation>equals</operation>
+        <value>Paul Marshall</value>
+    </filters>
+    <label>My Applications</label>
+</ListView>

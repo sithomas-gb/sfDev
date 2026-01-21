@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Interview Questions for Law Enforcement Training Coordinator</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>DefinitionReferenceId</name>
+            <valueLiteral>0osHu000000H2shIAC</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>OmniAssessmentTask</itemEntityType>
+            <name>UniqueName</name>
+            <valueLiteral>Interview_Questions_for_Law_Enforcement_Training_Coordinator_3761eb5b_13ce_11f0_8a1a_0bfb5d90e4c5</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <isRequired>true</isRequired>
+        <itemEntityType>OmniAssessmentTask</itemEntityType>
+        <name>Interview Questions for Law Enforcement Training Coordinator</name>
+        <uniqueName>Interview_Questions_for_Law_Enforcement_Tra_0a959b9e_13cf_11f0_8a1a_8b2465193bb0</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanType>Retail</actionPlanType>
+    <description>Initial interview for Law Enforcement Training Coordinator position</description>
+    <isAdHocItemCreationEnabled>true</isAdHocItemCreationEnabled>
+    <name>Law Enforcement Training Coordinator Interview</name>
+    <targetEntityType>ApplicationFormEvaluation</targetEntityType>
+    <uniqueName>Law_Enforcement_Training_Coordinator_Interv_0236a996_13cf_11f0_8a1a_7bf173b81d05</uniqueName>
+</ActionPlanTemplate>

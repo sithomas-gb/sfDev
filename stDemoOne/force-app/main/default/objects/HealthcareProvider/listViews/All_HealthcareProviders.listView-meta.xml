@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_HealthcareProviders</fullName>
+    <columns>Name</columns>
+    <columns>LastModifiedDate</columns>
+    <columns>LastModifiedBy</columns>
+    <columns>Account</columns>
+    <columns>Practitioner</columns>
+    <columns>ReferredByContact</columns>
+    <columns>Status</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Healthcare Providers</label>
+</ListView>

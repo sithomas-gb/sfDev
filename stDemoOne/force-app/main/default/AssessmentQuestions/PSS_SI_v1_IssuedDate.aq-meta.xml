@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Issued Date</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Issued Date</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Date</dataType>
+    <developerName>PSS_SI_v1_IssuedDate</developerName>
+    <name>IssuedDate</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

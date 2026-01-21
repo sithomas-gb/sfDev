@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionPlanTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>DocumentChecklistItem</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Boat License</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>2</displayOrder>
+        <isRequired>false</isRequired>
+        <itemEntityType>DocumentChecklistItem</itemEntityType>
+        <name>Boat License</name>
+        <uniqueName>Boat_License_bdfb169d_aefa_11ee_8f4a_ad20f9071864</uniqueName>
+    </actionPlanTemplateItem>
+    <actionPlanTemplateItem>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>DocumentChecklistItem</itemEntityType>
+            <name>DocumentTypeId</name>
+            <valueLiteral>0deHu000000LOhQIAW</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <actionPlanTemplateItemValue>
+            <itemEntityType>DocumentChecklistItem</itemEntityType>
+            <name>Name</name>
+            <valueLiteral>Notarized Invoice</valueLiteral>
+        </actionPlanTemplateItemValue>
+        <displayOrder>1</displayOrder>
+        <isRequired>true</isRequired>
+        <itemEntityType>DocumentChecklistItem</itemEntityType>
+        <name>Notarized Invoice</name>
+        <uniqueName>Notarized_Invoice_b7297b7f_aefa_11ee_8f4a_590a746c294a</uniqueName>
+    </actionPlanTemplateItem>
+    <description>Ensures all required documents are uploaded</description>
+    <isAdHocItemCreationEnabled>false</isAdHocItemCreationEnabled>
+    <name>Boat Registration Documents</name>
+    <targetEntityType>IndividualApplication</targetEntityType>
+    <uniqueName>Boat_Registration_Documents_ad87a961_aefa_11ee_8f4a_c56e9fcec933</uniqueName>
+</ActionPlanTemplate>

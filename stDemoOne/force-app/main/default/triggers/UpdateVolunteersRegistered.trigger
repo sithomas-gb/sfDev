@@ -1,0 +1,1 @@
+trigger UpdateVolunteersRegistered on Shift (after insert, after update, after delete) {PublicSector.VolunteerProjUserManager.updateVolunteersRegisteredCount(Trigger.operationType, Trigger.Old, Trigger.oldMap, Trigger.New, Trigger.newMap);}

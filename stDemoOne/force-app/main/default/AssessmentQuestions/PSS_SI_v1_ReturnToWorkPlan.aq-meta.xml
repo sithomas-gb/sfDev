@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>ReturnToWorkPlan</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Return-to-work plan was provided to injured employee</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>PSS_SI_v1_ReturnToWorkPlan</developerName>
+    <name>ReturnToWorkPlan</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

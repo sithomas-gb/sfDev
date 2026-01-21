@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>How angry?</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>On a scale of 1-10 (10 being the most angry), How angry were you when you committed the physical altercations?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Integer</dataType>
+    <developerName>How_angry</developerName>
+    <name>How angry?</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>Violent_Acts</relatedQuestion>
+</AssessmentQuestion>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Phychological disease Group</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Psychological disease</questionText>
+        <responseValues>Yes
+No</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>RadioGroup</dataType>
+    <developerName>Psychological_disease_Group</developerName>
+    <formulaResponseDataType>Text</formulaResponseDataType>
+    <name>Psychological disease Group</name>
+    <questionCategory>Demographic</questionCategory>
+</AssessmentQuestion>

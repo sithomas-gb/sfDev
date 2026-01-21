@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Cash Assistance</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Does the client need additional Cash Assistance?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Checkbox</dataType>
+    <developerName>Cash_Assistance</developerName>
+    <name>Cash Assistance</name>
+    <questionCategory>Referral</questionCategory>
+</AssessmentQuestion>

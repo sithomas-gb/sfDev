@@ -1,0 +1,51 @@
+<template>
+    <!-- In-component toast -->
+    <template if:true={showLocalToast}>
+      <div class="custom-toast slds-notify slds-notify_toast slds-theme_success" role="status">
+        <span class="slds-assistive-text">Success</span>
+        <div class="slds-notify__content">
+          <h2 class="slds-text-heading_small">{toastMessageValue}</h2>
+        </div>
+      </div>
+    </template>
+  
+    <lightning-card icon-name={cardIcon}>
+      <h3 slot="title">
+        <span style={computedTitleStyle}>
+          <div>{cardTitle}</div>
+        </span>
+      </h3>
+      <div slot="actions">
+        <template if:true={buttonIcon}>
+          <lightning-button-icon icon-name={buttonIcon} variant="border" onclick={handleStart} alternative-text="Start">
+          </lightning-button-icon>
+        </template>
+      </div>
+  
+      <lightning-layout vertical-align="center" horizontal-align="center">
+        <lightning-layout-item>
+          <div class="slds-progress slds-progress_vertical">
+            <ol class="slds-progress__list">
+              <template for:each={steps} for:item="step">
+                <li key={step.text} class={step.itemClass}>
+                  <div class={step.markerClass}>
+                    <template if:false={step.isActive}>
+                      <lightning-icon
+                        if:true={step.iconName}
+                        icon-name={step.iconName}
+                        variant={step.variant}
+                        size="x-small">
+                      </lightning-icon>
+                    </template>
+                  </div>
+                  <div class="slds-progress__item_content slds-grid slds-grid_align-spread">
+                    {step.text}
+                  </div>
+                </li>
+              </template>
+            </ol>
+          </div>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-card>
+  </template>

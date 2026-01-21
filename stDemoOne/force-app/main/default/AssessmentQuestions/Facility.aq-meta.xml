@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Facility</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Which specific areas of the facility were affected, and how do they impact normal operations or safety protocols?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>TextArea</dataType>
+    <developerName>Facility</developerName>
+    <name>Facility</name>
+    <questionCategory>Investigation</questionCategory>
+</AssessmentQuestion>

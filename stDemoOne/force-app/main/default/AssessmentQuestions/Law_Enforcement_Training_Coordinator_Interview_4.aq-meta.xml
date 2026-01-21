@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Law Enforcement Training Coordinator Interview 4</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>Can you provide an example of a challenging training situation you faced and how you handled it?</questionText>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Text</dataType>
+    <developerName>Law_Enforcement_Training_Coordinator_Interview_4</developerName>
+    <name>Law Enforcement Training Coordinator Interview 4</name>
+    <questionCategory>Interview</questionCategory>
+</AssessmentQuestion>

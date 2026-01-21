@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_BenefitTypes</fullName>
+    <columns>Name</columns>
+    <columns>Category</columns>
+    <columns>ProcessType</columns>
+    <columns>Type</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Benefit Types</label>
+</ListView>

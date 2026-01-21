@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Available_Volunteer_Projects</fullName>
+    <columns>Name</columns>
+    <columns>Location</columns>
+    <columns>Status</columns>
+    <columns>StartDateTime</columns>
+    <columns>EndDateTime</columns>
+    <columns>IsPublishedOnWeb</columns>
+    <columns>PublicSector__VolunteersStillNeeded__c</columns>
+    <columns>Description</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>IsPublishedOnWeb</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>PublicSector__VolunteersStillNeeded__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <label>Available Volunteer Projects</label>
+</ListView>

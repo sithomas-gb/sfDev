@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssessmentQuestion xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assessmentQuestionVersion>
+        <isActive>true</isActive>
+        <name>Cocaine Usage</name>
+        <optionSourceResponseValue>false</optionSourceResponseValue>
+        <questionText>What is your approximate weekly usage of Cocaine?</questionText>
+        <responseValues>1-2 times a week
+3-5 times a week
+More than 5 times a week</responseValues>
+        <status>Active</status>
+        <versionNumber>1</versionNumber>
+    </assessmentQuestionVersion>
+    <dataType>Radio</dataType>
+    <developerName>Cocaine_Usage</developerName>
+    <name>Cocaine Usage</name>
+    <questionCategory>Demographic</questionCategory>
+    <relatedQuestion>Drug_Use_Last_90_days</relatedQuestion>
+</AssessmentQuestion>
